@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NavBarHome"
+            android:icon="@mipmap/place"
+            android:title="Home" />
+        <item
+            android:id="@+id/NavBarChallengeAthlete"
+            android:icon="@mipmap/data_usage"
+            android:title="Open Challenges" />
+        <item
+            android:id="@+id/NavBarPastChallenges"
+            android:icon="@mipmap/content_copy"
+            android:title="Past Challenges" />
+        <item
+            android:id="@+id/NavBarTeams"
+            android:icon="@mipmap/people"
+            android:title="Teams" />
+        <item
+            android:id="@+id/NavBarProfile"
+            android:icon="@mipmap/profileicon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/NavBarHistory"
+            android:icon="@mipmap/content_paste"
+            android:title="History" />
+    </group>
+
+</menu>

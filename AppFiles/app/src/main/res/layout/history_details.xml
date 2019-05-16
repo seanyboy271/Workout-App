@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryDetails">
+
+    <TextView
+        android:id="@+id/historyLogDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/historyResult"
+        app:layout_constraintStart_toStartOf="@+id/historyResult"
+        app:layout_constraintTop_toBottomOf="@+id/historyResult" />
+
+    <TextView
+        android:id="@+id/historyLogDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Log Date:  "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/historyResultLabel"
+        app:layout_constraintStart_toStartOf="@+id/historyResultLabel"
+        app:layout_constraintTop_toBottomOf="@+id/historyResultLabel" />
+
+    <TextView
+        android:id="@+id/historyResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Result:"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/historyTeamLabel"
+        app:layout_constraintStart_toStartOf="@+id/historyTeamLabel"
+        app:layout_constraintTop_toBottomOf="@+id/historyTeamLabel" />
+
+    <TextView
+        android:id="@+id/ChallengeDetailNameHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CoachNameHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChallengeDetailNameHistory" />
+
+    <TextView
+        android:id="@+id/startDateHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoachNameHistory" />
+
+    <TextView
+        android:id="@+id/endDateHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startDateHistory" />
+
+    <TextView
+        android:id="@+id/descriptionHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:maxLines="6"
+        app:layout_constraintStart_toStartOf="@+id/descriptionLabelHistory"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabelHistory" />
+
+    <TextView
+        android:id="@+id/startDateLabelHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Start Date"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/startDateHistory"
+        app:layout_constraintEnd_toEndOf="@+id/startDateHistory"
+        app:layout_constraintStart_toStartOf="@+id/startDateHistory" />
+
+    <TextView
+        android:id="@+id/endDateLabelPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="End Date"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/endDateHistory"
+        app:layout_constraintEnd_toEndOf="@+id/endDateHistory"
+        app:layout_constraintStart_toStartOf="@+id/endDateHistory" />
+
+    <TextView
+        android:id="@+id/descriptionLabelHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Description"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateHistory" />
+
+    <TextView
+        android:id="@+id/historyTeamLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Team:  "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionLabelHistory"
+        app:layout_constraintStart_toStartOf="@+id/descriptionLabelHistory"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionHistory" />
+
+    <TextView
+        android:id="@+id/historyTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="112dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/historyTeamLabel"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionHistory" />
+
+    <TextView
+        android:id="@+id/historyResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/historyTeamName"
+        app:layout_constraintStart_toStartOf="@+id/historyTeamName"
+        app:layout_constraintTop_toBottomOf="@+id/historyTeamName" />
+
+
+</android.support.constraint.ConstraintLayout>

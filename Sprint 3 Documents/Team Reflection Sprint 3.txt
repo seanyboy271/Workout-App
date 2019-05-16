@@ -1,0 +1,27 @@
+Project C
+Team 7
+Team Reflection
+
+
+During this sprint, our team implemented the result logging, challange history, leaderboards, and notifications part of the app.
+As a team, we all worked together to accomplish our goals, while still each working on a different element of the
+implementation. Ian worked on logging results as well as the history portions of the app. Sean worked on creating the notifications
+that would remind the users to log their results.Chris worked on documentation so that we could make sure everybody was on track.
+Jeff worked on logging, history, and leaderboards so that users could log their results, see the top performers in each catergory,
+and see which challenges they have been a part of. Hamed worked on allowing users to update thier profile information so that they
+could personalize their accounts. Overall, we accomplished everything that we planned to. Atheltes are now able to log their
+results, see their challenge history, see individual and team leaderboards, and get notified each night so they dont forget to
+either start logging results for a challenge, or keep logging their results for a challenge.
+
+Something that worked during this spring was our ability to figure things out. Now that we all have had some exposure to android
+studio, PHP, and SQL, we all knew the languages and concepts better than we did before, which allowed us to get more done easier.
+Something else that worked during this iteration was our delegation. Every member of the team had something to work on, and we all
+ended up getting our parts done without much of a problem. An issue we encountered during this spring was finding time to implement
+all of the functionality. Although we did end
+up finishing everything we wanted to, it was a lot more work than expected due to the heavy interaction with the database, as well
+as making the UI user friendly.
+
+For the rest of the project, we still have a lot to complete such as team invitations, profile lookup, and a lot of small error
+checking things that are required to make the app behave as expected. Overall, I think we got a lot done in the six weeks that we
+had to work on this project, and I think that what we have is very good for a team who has never made android apps before.
+

@@ -1,0 +1,58 @@
+﻿Project Requirements (Group C7)
+
+
+Functional requirements:
+* The app Trainer/Coach for a challenge creates a challenge, start date, and duration
+* Athletes can create an account with a password to log into the app.
+* Athletes can create a team and compete with other teams during a challenge.
+* Athletes can view current and future challenges and register to join in a challenge.
+* At the start of a challenge, notifications are sent to all registered athletes to begin.
+* Athletes log their exercise for the current challenge.
+* During a challenge, notifications are sent to all registered athletes if they have not logged their exercise by 8 pm.
+* A record of all successful challenges is kept for each athlete.
+
+
+Elaborated:
+
+
+* The app should be compatible with Android devices available for the last two years.
+* How or where data is stored is up to developer discretion.
+* A user of the app can be either a coach or an athlete. To be both, the person would need two different sets of login credentials.
+* No limit on number of challenges that can be posted by a Coach.
+* The app should allow coaches to specify a “Failed challenge”.
+* The size of the team depends on the challenge.
+* Leader boards for both team and individuals.
+* For team challenge, users will need to know what their teammates are doing with respect to the challenge.
+* Only coaches can create challenges.
+* Coach to be able to have a list of athletes that they can invite to join a challenge when they set up the challenge.
+* Athletes to have a list of friends that they can invite to join a team for a team challenge.
+* Appropriate security is needed but not specified.
+* Users will self-identify as a coach
+* Number of members on a team should be specified by the coach.(min/max)
+* Users can be members of different teams as long as they can for different challenges.
+* No need to verify results logged by athletes
+* Some feedback in the app if athlete successfully completes a challenge - badge, fireworks, confetti … 
+* Notifications will be sent to mobile devices, so phone numbers/emails
+* Everything should be based on Eastern Standard Time
+* Users should be allowed to withdraw from challenges before completing them(Some time period)
+* Default degree of privacy between users on the app should be all private.
+* Challenges need to include disclaimers regarding a user’s current health.
+* Users must log results 24 hours after log day.
+* Example of a “Challenge”: It could be “Run a Mile a Day for a Month” or “January Jumping Challenge” (athletes must complete 10 jumping jacks per day for the month). The key is for a specific activity to be done for a limited amount of time.
+* Profile for coaches and athletes.
+* Coaches can send notifications to athletes registered for the challenges that they have created.
+* Athletes can create an account, join challenges, create a team, join a team.
+* Search challenges by start date, by coach or open teams within a challenge.
+* Challenges should indicate their level of difficulty.
+* Teams compete against all other teams.
+* Teams are only created for a single challenge, but keep a history.
+* Challenges are be created 6 month prior.
+* Only athletes that complete the challenge can rate a challenge.
+* Generally all challenges are individual events, the team aspect is to provide motivation for members to complete the challenge.
+* For team events, athletes log their individual efforts, the app should calculate either the total or the average - this is up to the coach when setting up the challenge.
+* All user names are searchable, however to view profiles, it must be set to public.
+* Users should have the ability to change passwords or usernames.
+* A short bio for profiles.
+* Options to remove history of their past challenges.
+* Every username must be unique.
+* Friends list for both coaches and athletes.

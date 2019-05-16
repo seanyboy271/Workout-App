@@ -1,0 +1,29 @@
+Project C
+Team 7
+Team Reflection
+
+
+During this sprint, our team implemented the create team, create challenge, join team, join challenge, and forgot password
+functionalies. As a team, we all worked together to accomplish our goals, while still each working on a different element of the 
+implementation. Ian worked on creating challenges, creating teams, and working with our database in order to ensure that we would
+have access to all of the information we needed. Sean worked on joining teams, joining challenges, and creating a UI that allowed 
+the app to feel organized and functional. Chris was primarily responsible for ensuring that the forgot password functionality
+was implmented so that users would be able to retrieve their information securely. Jeff worked on creating challenges, creating
+teams, and creating the fragments that allow the homepage/navigation drawer to feel smooth and quick. Hamed worked on creating 
+challenges, creating teams, and creating APIConnection methods that allowed us to interact with the database. Overall, we 
+accomplished everything that we planned to. Coaches can create  challenges consiting of a description, name, max team size, fail 
+condition, start date/time, duration, and challenge activity. Users can create a team to participate in these challenges, as well
+as search through a list of challenges to find one that they enjoy and join it easily by either making a new team, or joining an
+existing one.
+
+Something that worked during this iteration was our delegation. Every member of the team had something to work on, and we all
+ended up getting our parts done without much of a problem. Another thing that worked was our teamwork. If someone had a question 
+about something, we would all share our opinions about a design choice, or help to figure out how to do something if it was more 
+technical. An issue we encountered during this spring was finding time to implement all of the functionality. Although we did end
+up finishing everything we wanted to, it was a lot more work than expected due to the heavy interaction with the database, as well
+as making the UI user friendly. 
+
+For sprint 3, I think that we should try to spread out the work even more than we did this sprint. Since we now know more about
+android and also are further down the road with our design, I think that it should be easier to have more individual tasks to 
+delegate without much of an issue. In terms of the amount of work that we assigned ourselves, I think that we should stick with the 
+same amount of work that we have done for this sprint.

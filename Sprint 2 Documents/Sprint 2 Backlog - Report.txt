@@ -1,0 +1,66 @@
+Sprint 1 Report
+Project C 
+Group 7
+
+Sprint Goals: During this sprint our main goal was to implement the join team, join challenge, create team, create challenge, and account recovery functionality into our app.
+
+Sprint Backlog: 
+	User Story 1: As a user, I want to be able to retrieve my username/password via email, so I do not have to worry if I forgot my username or password.
+
+	  Scenario: User retrieves their forgotten username/password
+   Given a user is on the log-in page
+   When they click on the "Forgot my Username/Password" link
+   Then they should be taken to the Forgot User/Pass page
+   When they filled out the required information
+   And answered the security questions correctly
+   Then an email with the forgotten username/password should be sent to the address registered with the account.
+
+	Explanation: We accomplished this by creating a random password generator. When the user submits their email, we use a get request to find their account. We then use a post request to change their password to whatever the random password generator created, and then finally send the user an email containing the temporary password.
+
+	User Story 2: As an athlete, I want to be able to view current challenges I have registered, so that I can refer to the challenge information.
+
+	Scenario: User views their current challenges
+   Given a user is on their homepage
+   When they click the [Current Challenges] button
+   Then they should see all the challenges they are currently registered in, along with information
+ 
+	Explanation: We implemented this functionalty by using a get request to search the database for any challenges that are linked with the current user's Id. We then retrieve all of those challenges and place them into a Listview to display. 
+
+	User Story 3: As a user, I want to pick and choose challenges from a list to join, so I can compete in the ones I like.
+
+	Scenario: User registers for a challenge
+   Given a user is on their homepage
+   When they click the Challenges tab
+   Then they should be taken to the future challenges page
+   And see all the future challenges that they have not yet registered for
+   When they select a challenge
+   And click the [Join Team/Create Team] button
+   Then they should be able to join an existing team or create a new team
+	
+	Explanation: We implemented this by using a get request to retrieve all of the challenges that have been created, and then displaying them to the user. The user then clicks on whichever challenge they would like to join, where they are taken to another page which prvoides them with all of the details of that challenge. The user can then either choose to join a team, or create a team for that specific challenge. Once they have done this, they have successfully joined the challenge. 
+
+
+	User Story 4: As a trainer/coach, I want to create/post Team challenges with vivid description and requirements, so that Teams can join and compete.
+
+	Scenario: User(Coach) creates an individual Challenge
+   Given a user(coach) is on their homepage
+   When they click the [Create Challenge] button
+   Then they should be taken to a challenge creation form page
+   When they filled out the required information
+   And input a number for the {Team Size} field
+   And click the [Ok] button
+   Then they should have their challenge created and posted
+
+	Explanation: We implemented this by creating a page for the coach which will allow them to create a challenge. This page is accessed by navigating to the challenge bar and selecting the "Make a challenge" button. They are then prompted to fill in all of the fields related to a challenge, click the "Create a challenge" button, and then the challenge is created and they are redirected to the coach's homepage.
+
+	User Story 5: As an athlete, I want to create a team for certain challenge, so I can participate with my friends.
+
+	Scenario: User creates a team
+   Given a user is viewing their challenges
+   When they click the [Create Team] button
+   Then they should be taken to a team creation form page
+   When they filled out the required information
+   And click [Create Team]
+   Then they should have their account created
+   
+	Explanation: We implemented this by giving the athlete the option to create a team while choosing how to join a challenge. They are directed to a page which will prompt them to input all the data required to create a team. All of the data is sent in a POST request, and added to the database. 

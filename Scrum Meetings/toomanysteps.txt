@@ -1,0 +1,2 @@
+so apparently you can't have an empty folder in github
+i literally created this file to upload a folder into github

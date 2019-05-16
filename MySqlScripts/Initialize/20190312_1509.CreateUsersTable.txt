@@ -1,0 +1,31 @@
+/*
+    Created by Ian Burns - 05-12-2019
+
+    Creates the Users table
+
+    Length constraits:
+      Email - 256 chars
+      Username - 36 chars
+      Password - 1000 chars
+ */
+
+create table Users
+(
+	Id int auto_increment,
+	Email nvarchar(256) not null,
+	Username nvarchar(36) not null,
+	Password nvarchar(1000) not null,
+	PasswordHash nvarchar(1000) null,
+	IsCoach bit default 0 null,
+	IsPrivate bit default 1 null,
+	constraint Users_pk
+		primary key (Id)
+);
+
+create unique index Users_Id_uindex
+	on Users (Id);
+
+create unique index Users_Username_uindex
+	on Users (Username);
+
+

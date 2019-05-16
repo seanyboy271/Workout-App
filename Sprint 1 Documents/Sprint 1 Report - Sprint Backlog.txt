@@ -1,0 +1,59 @@
+Sprint 1 Report
+Project C 
+Group 7
+
+	Sprint Goals: During this sprint our main goal was to implement the login/account creation part of our app. These goals are
+	reflected in user stories 1, 2, 3, and 4. 
+
+User Story 1: As a user, I want to create my own personal account, so that all my information is saved.
+	
+	Scenario/Test: User creates account
+   Given a user click on the [Sign Up] button
+   Then they should be taken to an account creation form page
+   When they filled out the required information
+   And click the [Sign Up] button
+   Then they should have their account created.
+
+	Explanation: This was done by creating a sign up page within the app. We then created a remote database, along with an API that
+	allows the app to interact with the database, in order to save the users information once an account is created. 
+
+User Story 2: As an athlete, I want to create my own athlete account, so that I can join challenges.
+	
+	Scenario/Test: User chooses an athlete account
+   Given a user clicks on the [Sign Up] button
+   Then they should be taken to an account creation form page
+   When they filled out the required information and click [Sign Up]
+   Then they are taken to the Account Type Page
+   And click [Athlete]
+   Then they should have their account created and registered as an athlete
+
+
+	Explanation:This was done by giving creating a new page that allows the user to select the type of account they want to make after
+	entering in their email, username, and password. Depending on the option they choose on this page, the isCoach value in the database
+	will be set to either 0 or 1.
+
+User Story 3: As a trainer/coach, I want to create my own coach account, so that I can be distinguished from other athletes.
+	
+	Scenario/Test: User chooses a coach account
+   Given a user clicks on the [Sign Up] button
+   Then they should be taken to an account creation form page
+   When they filled out the required information and click [Sign Up]
+   Then they are taken to the Account Type Page
+   And click [Coach]
+   Then they should have their account created and registered as an coach
+
+	Explanation: This was implemented in the same way as user story 2.
+
+User Story 4: As a user, I want to be able to log in with a unique Username and Password, so that all my information is private and secure.
+	
+	Scenario/Test: User logs in
+   Given a user fills out the {Username} field that's already registered
+   And {Password} fields with the correct password
+   When they click the [Log in] button
+   Then they should see their homepage
+
+	
+	Explanation: This was done by creating a login page which has a field for username and password. Once the user enters these values,
+	a GET request is sent to the database, and the user is either directed to the homepage, or given an error message stating that the
+	credentials are invalid. 
+

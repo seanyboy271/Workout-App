@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpcomingChallengeDetails">
+
+    <TextView
+        android:id="@+id/ChallengeDetailNameUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CoachNameUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChallengeDetailNameUpcoming" />
+
+    <TextView
+        android:id="@+id/startDateUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoachNameUpcoming" />
+
+    <TextView
+        android:id="@+id/endDateUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startDateUpcoming" />
+
+    <TextView
+        android:id="@+id/descriptionUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:maxLines="6"
+        app:layout_constraintStart_toStartOf="@+id/descriptionLabelUpcoming"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabelUpcoming" />
+
+    <TextView
+        android:id="@+id/startDateLabelUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Start Date"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/startDateUpcoming"
+        app:layout_constraintEnd_toEndOf="@+id/startDatePast"
+        app:layout_constraintStart_toStartOf="@+id/startDateUpcoming" />
+
+    <TextView
+        android:id="@+id/endDateLabelUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="End Date"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/endDateUpcoming"
+        app:layout_constraintEnd_toEndOf="@+id/endDatePast"
+        app:layout_constraintStart_toStartOf="@+id/endDateUpcoming" />
+
+    <TextView
+        android:id="@+id/descriptionLabelUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Description"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDateUpcoming" />
+
+</android.support.constraint.ConstraintLayout>

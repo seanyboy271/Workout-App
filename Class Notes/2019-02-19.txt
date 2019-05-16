@@ -1,0 +1,4 @@
+#Class Notes Feb 19, 2019
+
+- From a Scrum Meeting, only one person should log and commit the meeting notes
+- There's a helpful Test Cases starter document on BB

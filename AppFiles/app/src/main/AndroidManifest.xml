@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a355appgroupc7">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoTitle"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".HistoryDetails"></activity>
+        <activity android:name=".UpcomingChallengeDetails" />
+        <activity android:name=".LogChallenge" />
+        <activity
+            android:name=".PastChallengesDetails"
+            android:label="@string/title_activity_past_challenges_details"
+            android:theme="@style/AppThemeNoTitle.NoActionBar" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".CreateTeamActivity" />
+        <activity android:name=".ChallengeDetails" />
+        <activity android:name=".JoinTeam" />
+        <activity android:name=".CreateChallengePt2" />
+        <activity
+            android:name=".CreateChallenge"
+            android:label="@string/title_activity_create_challenge"
+            android:theme="@style/AppThemeNoTitle.NoActionBar" />
+        <activity
+            android:name=".CoachHomepage"
+            android:label="@string/title_activity_coach_homepage"
+            android:theme="@style/AppThemeNoTitle.NoActionBar" />
+        <activity
+            android:name=".AthleteHomepage"
+            android:label="@string/title_activity_athlete_homepage"
+            android:theme="@style/AppThemeNoTitle.NoActionBar" />
+        <activity
+            android:name=".ForgotInformation"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".AccountType"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".SignUpPage"
+            android:theme="@style/AppThemeNoTitle" />
+        <activity
+            android:name=".LoginPage"
+            android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".AlarmReceiverDailyNotif" />
+        <receiver android:name=".AlarmReceiverChallengeStart" />
+    </application>
+
+</manifest>

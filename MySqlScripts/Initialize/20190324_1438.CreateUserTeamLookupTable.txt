@@ -1,0 +1,20 @@
+/*
+    Created by Ian Burns - 05-12-2019
+
+    Creates the User_Team Lookup table
+ */
+
+create table `lookups`.`User_Team`
+(
+	Id int auto_increment,
+	UserId int not null,
+	TeamId int not null,
+	constraint User_Team_pk
+		primary key (Id),
+	constraint User_Team_TeamId_fk
+		foreign key (TeamId) references `dbo`.`Teams` (Id),
+	constraint User_Team_UserId_fk
+		foreign key (UserId) references `dbo`.`Users` (Id)
+);
+
+

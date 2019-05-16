@@ -1,0 +1,18 @@
+/*
+    Created by Ian Burns - 03-28-2019
+
+    Creates the Team_Challenge Lookup table
+ */
+
+create table `lookups`.`Team_Challenge`
+(
+	Id int auto_increment,
+	TeamId int not null,
+	ChallengeId int not null,
+	constraint Team_Challenge_pk
+		primary key (Id),
+	constraint Team_Challenge_ChallengeId_fk
+		foreign key (ChallengeId) references dbo.Challenges (Id),
+	constraint Team_Challenge_TeamId_fk
+		foreign key (TeamId) references dbo.Teams (Id)
+);

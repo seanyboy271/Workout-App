@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/NavBarHomeCoach"
+            android:icon="@mipmap/place"
+            android:title="Home" />
+        <item
+            android:id="@+id/NavBarChallengeCoach"
+            android:icon="@mipmap/content_paste"
+            android:title="My Challenges" />
+        <item
+            android:id="@+id/NavBarProfileCoach"
+            android:icon="@mipmap/profileicon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/NarBarHistoryCoach"
+            android:icon="@mipmap/content_copy"
+            android:title="History" />
+    </group>
+
+</menu>

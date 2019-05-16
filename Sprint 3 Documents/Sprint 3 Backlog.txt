@@ -1,0 +1,64 @@
+8. View Current Challenges
+As an athlete, I want to be able to view current challenges I have registered, so that I can refer to the challenge information.
+Scenario: User views their current challenges
+   Given a user is on their homepage
+   When they click the [Current Challenges] button
+   Then they should see all the challenges they are currently registered in, along with information
+
+Explanation: We implemented this by using an sql query to sort out all challenges that have not yet started or ended, and put them into a list view
+
+13. Leader Boards
+As a user, I want to see top performers for both individual and team challenges with respected results, so I can compare my own results.
+Scenario: User views leader boards for all challenges
+   Given a user is viewing a challenge
+   When they click the [Leaderboards] button
+   Then they should be taken to the leaderboards page
+   And they should see top performers with respected challenges and results
+
+Explanation: We did this by sorting the logged data into teams and individuals. We then sorted each of the results (average of results for the team) and then displayed them as seperate list views
+
+14. Logging results
+As an athlete, I want to be able to log my results within 24 hours after the challenge ends, so that I have adequate time to log my results.  
+   Scenario: User logs their results
+   Given a user is viewing a challenge
+   Then they click the [Log] button
+   And they should see a open input field for {Amount}
+   When they input a number
+   And they click the [Log] button
+   Then their result for the selected challenge should be logged
+
+Explanantion: We did this by creating a log table within the database which stores the values that each individual logs
+   
+
+
+15. History
+As an athlete, I want to be able to see a history of past challenges I competed in with respected results, so that I can track my progress.
+Scenario: User views their history of past challenges
+   Given a user is on their homepage
+   When they click on the [History] button
+   Then they should be taken to a history page
+   And they should see all past challenges they have participated in with their logged results
+
+Explanation: We did this by choosing only the challenges which have ended, and that the user entered into, and then placing these into a list view
+
+
+17. Challenge start notifications
+As an athlete, I want to receive notification prior to when a challenge is about to start, so that I do not forget to participate.
+Scenario: User receives notification before the challenge is to start
+   Given a user is registered for a challenge
+   When the challenge is near its start time
+   Then the user should receive a notification from the app to remind them
+
+Explanantion: We implemented this by creating a notification every time a user starts or joins a team, which goes off at the challenge start time
+
+
+18. Logging notifications
+As an athlete, I want to receive notification if I have not yet logged my results by 8pm on the last day to log, so that I do not forget to log.
+   Scenario: User receive notification at 8pm(Eastern) on the last day to log results if they have not yet logged
+   Given a user is registered for a challenge
+   And they have not yet logged their results
+   When it is 8pm(Eastern) on the last day to log
+   Then they should receive a notification from the app to remind them
+
+Explanantion: We implemented this by creating a repeating notification everytime a user starts or joins a team, and set the notification to go off every night at 8pm, reminding the user to log their results
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastChallengeDetailFragment">
+
+    <TextView
+        android:id="@+id/ChallengeDetailNamePast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CoachNamePast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChallengeDetailNamePast" />
+
+    <TextView
+        android:id="@+id/startDatePast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="84dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CoachNamePast" />
+
+    <TextView
+        android:id="@+id/endDatePast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/startDatePast" />
+
+    <TextView
+        android:id="@+id/descriptionPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="16dp"
+        android:maxLines="6"
+        app:layout_constraintStart_toStartOf="@+id/descriptionLabelPast"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionLabelPast" />
+
+    <TextView
+        android:id="@+id/startDateLabelPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Start Date"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/startDatePast"
+        app:layout_constraintEnd_toEndOf="@+id/startDatePast"
+        app:layout_constraintStart_toStartOf="@+id/startDatePast" />
+
+    <TextView
+        android:id="@+id/endDateLabelPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="End Date"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/endDatePast"
+        app:layout_constraintEnd_toEndOf="@+id/endDatePast"
+        app:layout_constraintStart_toStartOf="@+id/endDatePast" />
+
+    <TextView
+        android:id="@+id/descriptionLabelPast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:text="Description"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDatePast" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
