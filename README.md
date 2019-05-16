@@ -1,13 +1,3 @@
-# project-c-c7
-project-c-c7 created by GitHub Classroom
-
-
-Team Member Roles:  
-• Project Manager - Ian Burns  
-• Communication Director - Yuqin Ying  
-• Negotiator - Hamed Albastaki, Sean Kotrola  
-• Documentation Lead - Christopher Randall  
-
 ## To Client
 Please open the .docx files in the repo in order to view the diagrams, storyboards, and user stories. The only external link for the UML Diagrams, which is below.
 
